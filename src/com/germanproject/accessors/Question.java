@@ -6,6 +6,24 @@ public class Question
     private String correctAnswer;
     private boolean correctSelected;
 
+    //basic no arg constructor
+    public Question()
+    {
+        this.answerA = "";
+        this.answerB = "";
+        this.answerC = "";
+        this.answerD = "";
+        this.correctAnswer = "";
+    }
+
+    /**
+     *
+     * @param answerA the field for question A selection
+     * @param answerB the field for question B selection
+     * @param answerC the field for question C selection
+     * @param answerD the field for question D selection
+     * @param correctAnswer the correct answer out of the 4 possible selections
+     */
     public Question(String answerA, String answerB, String answerC, String answerD, String correctAnswer)
     {
         this.answerA = answerA;
