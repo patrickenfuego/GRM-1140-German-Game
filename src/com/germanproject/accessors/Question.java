@@ -28,6 +28,7 @@ public class Question
      */
     public Question(String title, String answerA, String answerB, String answerC, String answerD, String correctAnswer)
     {
+        this.title = title;
         this.answerA = answerA;
         this.answerB = answerB;
         this.answerC = answerC;
@@ -35,6 +36,11 @@ public class Question
         this.correctAnswer = correctAnswer;
     }
     //setters
+
+    public void setTitle(String title)
+    {
+        this.title = title;
+    }
     public void setAnswerA(String answerA)
     {
         this.answerA = answerA;
@@ -60,6 +66,11 @@ public class Question
         this.correctSelected = correctSelected;
     }
     //getters
+
+    public String getTitle()
+    {
+        return title;
+    }
     public String getAnswerA()
     {
         return answerA;
