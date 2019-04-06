@@ -3,12 +3,14 @@ package com.germanproject.accessors;
 public class Question
 {
     private String answerA, answerB, answerC, answerD;
+    private String title;
     private String correctAnswer;
     private boolean correctSelected;
 
     //basic no arg constructor
     public Question()
     {
+        this.title = "";
         this.answerA = "";
         this.answerB = "";
         this.answerC = "";
@@ -24,7 +26,7 @@ public class Question
      * @param answerD the field for question D selection
      * @param correctAnswer the correct answer out of the 4 possible selections
      */
-    public Question(String answerA, String answerB, String answerC, String answerD, String correctAnswer)
+    public Question(String title, String answerA, String answerB, String answerC, String answerD, String correctAnswer)
     {
         this.answerA = answerA;
         this.answerB = answerB;
